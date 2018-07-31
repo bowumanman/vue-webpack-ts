@@ -38,29 +38,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * BEM规范
 * [url命名规范](https://www.cnblogs.com/wangsen/p/5890995.html)
 * URL规范：
-URL规范：
-详情页：
-company-detail
-investor-detail
-fund-detail
-lp-detail
-person-detail
-transaction-detail（投融资事件）
-new-issue-detail（新股发行事件）
-organization-detail（行业组织）
-exchange-detail（交易所）
-列表页:
-company-list
-investor-list
-fund-list
-lp-list
-person-list
-transaction-list（全部事件列表）
-financing-list（融资事件列表）
-mna-list（并购事件列表）
-withdraw-list （退出事件列表）
-new-issue-list（新股发行事件列表）cms里面有的 就用这里面的
-
 
 
 // 初始化数据 相当于data
