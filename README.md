@@ -40,7 +40,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 * URL规范：
 
 
-// 初始化数据 相当于data
+### 例子
+``` bash
+# 初始化数据 相当于data
   public msg: number = 123;
   public form: LoginForm = {
     username: '',
@@ -51,23 +53,24 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     username: [ { required: true, message: '请输入用户名', trigger: 'blur' } ],
     password: [ { required: true, message: '请输入密码', trigger: 'blur' } ],
   };
-  // refs
+
+#  refs
   public $refs: {
     loginForm: HTMLFormElement
   };
 
-  // 计算属性
+#  计算属性
   get computedMsg() {
     return 'computed ' + this.form.username;
   }
 
-  // watch
+#  watch
   @Watch('msg')
   public onChildChanged(val: string, oldVal: string) {
     return val + '***';
   }
 
-  // 生命周期钩子
+#  生命周期钩子
   public mounted() {
     this.getMessage();
     particles();
@@ -76,16 +79,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     this.getMessage();
   }
 
-  // 方法
+#  方法
   public getMessage() {
     this.msg = 456;
   }
-
+、、、
   ### 分支
-  master：主分支 
-  develop：开发分支
-  bug1.0：cms2.0第一个版本修复bug用的分支
-  build-develop：当初因为编辑缓慢而新建的分支，用来测试并修改构建速度（试用了多种配置后感觉效果不太好）
-  test：测试分支 对应232测试环境
-  release：正式环境发布用的分支（非负责人不要修改）
+* master：主分支 
+* develop：开发分支
+* test：测试分支
+* release：正式环境发布用的分支（非负责人不要修改）
 
