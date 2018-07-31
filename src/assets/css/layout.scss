@@ -1,0 +1,378 @@
+/**
+ *  Description: Layout 好乱啊
+ *  Author: Szh
+ */
+
+@import "varibles";
+.align-center {
+    text-align: center;
+}
+.align-left {
+    text-align: left;
+}
+.vertical-middle {
+    vertical-align: middle;
+}
+.vertical-top {
+    vertical-align: top;
+}
+.align-right {
+    text-align: right;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right !important;
+}
+.inline-block{
+    display:inline-block;
+}
+.underline {
+    text-decoration: underline;
+}
+// clear float
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cursor {
+    cursor: pointer;
+}
+.text-over-flow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.hide{
+    display:none;
+}
+.font-size-14 {
+  font-size: 14px
+}
+.font-size-16 {
+  font-size: 16px
+}
+.font-size-30 {
+  font-size:30px;
+}
+.c333{
+  color:#333;
+}
+.c666{
+  color:#666;
+}
+.c999{
+  color:#999;
+}
+.w-100 {
+  width: 100%;
+}
+.custom-box {
+    background: #fff;
+    border: $caColorLightGray 1px solid;
+}
+.custom-box-border-top-none {
+    background: #fff;
+    border: $caColorLightGray 1px solid;
+    border-top: none;
+}
+
+.el-input {
+    vertical-align: middle
+}
+
+.el-select {
+    vertical-align: middle
+}
+/****Safari浏览器下拉列表小箭头居下显示调整为中间***/
+
+@media screen and (-webkit-min-device-pixel-ratio) {
+    .el-select .el-input .el-input__icon {
+        top: 0;
+    }
+}
+/*弹窗在IE下不显示*/
+.el-dialog{
+    position: absolute !important;
+    left:50%;
+    transform:translateX(-50%);
+    top:15%;
+    margin-top:0 !important;
+}
+.el-dialog__wrapper {
+    position: fixed !important;
+    width:100%;
+}
+.el-dialog__header:hover{
+    cursor:move;
+}
+.el-form-item__label {
+    color: #666666
+}
+.el-form-item-m-b-0 {
+    margin-bottom: 0
+}
+.el-form-item__content-font-12 .el-form-item__content {
+    font-size: 12px;
+}
+/*消息框*/
+.el-message{
+    min-width: 100px!important;
+}
+/*列表信息颜色*/
+.ca-info-color {
+    font-weight: normal;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #909cb8;
+}
+.ca-info-color-red {
+    color: red;
+    font-weight: normal;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+} 
+.el-dialog .el-dialog__body{
+    padding:20px;
+}
+//覆盖饿了吗的tree
+.ca_permission{
+    //点击字选中选框 start
+    .el-checkbox{
+        padding-right: 70px;
+    }
+    .el-tree-node__label{
+        margin-left: -70px;
+    }
+    //点击字选中选框 end
+    //覆盖饿了吗，悬浮阴影
+    .el-tree-node__content{
+        &:hover{
+            background: transparent !important;
+        }
+    }
+    .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content{
+        background: transparent !important;
+    }
+   .el-checkbox__input {
+          margin-bottom: 4px;
+    }
+    .el-dialog--tiny{
+        width: 740px;
+    }
+    //隐藏小三角
+    .ca_per_tree .el-tree-node__expand-icon{
+        display: none;
+    }
+    .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children{
+        .el-tree-node>.el-tree-node__content{
+            padding-left: 0px !important;
+            margin-left: 18px !important;
+            //   background: green !important;
+        }
+       
+       
+    }
+    .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content{
+        width:16%;
+        float: left;
+    }
+     .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children{
+         width:84%;
+        float: left;
+    }
+    .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node{
+        width:16%;
+        float: left;
+        margin-left: 25px;
+    }
+    //一级样式
+    .ca_per_tree>.el-tree-node>.el-tree-node__content>.el-tree-node__label{
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+    }
+    //二级样式
+    .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-tree-node__label{
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        line-height: 24px;
+        color: #333;
+    }
+    //三级样式
+    .ca_per_tree>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__children>.el-tree-node>.el-tree-node__content>.el-tree-node__label{
+        font-family: MicrosoftYaHei;
+        font-size: 12px;
+        line-height: 24px;
+        color: #666;
+    }
+   .ca_per_tree>.el-tree-node{
+       margin-top: 20px;
+       //background: palegreen;
+   }
+}
+.el-date-editor{
+    .el-input__icon{
+        width:15px;
+    }
+    .el-input__inner{
+        padding:0 20px 0 25px !important;
+        font-size:13px;
+    }
+}
+.el-input-group__append, .el-input-group__prepend{
+    padding:0 10px;
+}
+.el-dialog__body {
+    .el-table td, .el-table th{
+        padding:0;
+        min-height:40px;
+    }
+}
+//覆盖饿了吗的disable样式
+.ca-pwdDisabled.el-input.is-disabled .el-input__inner{
+    background-color: #fff !important;
+    border-color:  #bfcbd9;
+    color: #1f2d3d;
+}
+.el-form-item.is-error .tagBox{
+    border-color: #f56c6c
+}
+// tooltip 背景颜色
+.el-tooltip__popper.is-dark {
+    background: rgba(102,102,102,0.8)!important;
+}
+// 溢出
+.wordWrap{
+    display: inline-block;
+    width:95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#666;
+}
+// Tooltip
+.el-tooltip__popper{
+    max-width: 500px;
+    word-wrap:break-word;
+}
+// 高管团队 删除弹出框
+.del-message {
+    .el-message-box__header .el-message-box__title {
+        span {
+            font-size: 18px!important;
+        }
+    }
+    .el-message-box__content .el-message-box__message {
+        p {
+            font-size: 16px!important;
+            color: $caBgColorBlue;
+        }
+    }
+    // .cancelBtn {
+    //      width: 60px;
+    //      height: 30px;
+    // }
+    // .confirmBtn {
+    //     width: 60px;
+    //     height: 30px;
+    // }
+}
+.el-cascader-menu__item__keyword{
+    color: red;
+    font-size:14px;
+}
+.el-input.is-disabled .el-input__inner, .el-cascader.is-disabled .el-cascader__label{
+    color:#333 !important;
+}
+.cm-12 .el-form-item__label{
+    font-size: 12px;
+}
+.select-t-10 {
+    margin-top: 10px;
+}
+.cm-12 .el-checkbox__label{
+    font-size: 12px;
+}
+// 覆盖饿了吗的验证样式
+.blank {
+    .el-input__inner, .is-error, is-success{
+        border: 1px solid #dcdfe6 !important;
+    }
+}
+// 登录样式
+.cms-login-form {
+
+}
+.ca-login--submit button {
+    width: 100%;
+    background: #5b8aff;
+    border: 1px solid rgba(91, 138, 255, 0.6);
+    color: #fff;
+    height: 38px;
+    font-size: 14px;
+    border-radius:3px;
+    padding:0;
+    span {
+        font-size: inherit;
+    }
+}
+.ca-login--submit button:hover{
+    background:rgba(91, 138, 255, 0.8);
+    color:#fff;
+}
+.ca-login--submit button:hover{
+    background:rgba(91, 138, 255, 0.8);
+    color:#fff;
+}
+.ca-login-content .el-input__inner{
+    padding-left:35px;
+}
+.ca-login-content .cms-login-user{
+    position:relative;
+}
+.ca-login-content .cms-login-user:before,.ca-login-content .cms-login-lock:before{
+    content:'\f007';
+    font-family:'FontAwesome';
+    position: absolute;
+    font-size:14px;
+    color:#909cb8;
+    left:10px;
+    top:0;
+}
+.ca-login-content .cms-login-lock:before{
+    content:'\f023';
+}
+.ca-login-content .el-input__inner:focus{
+    border-color:#5b8aff;
+}
+.ca-login-content .cms-login-focus:before{
+    color:#5b8aff !important;
+}
+.ca-login__panel .el-form-item__error {
+    //color: #fff;
+    margin-top: 3px;
+}
+.ca-tip-error .el-form-item__error {
+    color: #f56c6c;
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 4px;
+    position: absolute;
+    top: 82%;
+    left: 0;
+}
+.ca-person-info-input{
+    width: 200px!important;
+    height: 38px;
+}
+.cms-tab-select{
+    .el-tag__close.el-icon-close{
+        display:none;
+    }
+}

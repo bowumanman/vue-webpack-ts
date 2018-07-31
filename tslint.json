@@ -1,0 +1,131 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "align": [ // 定义对齐风格
+        false,
+        "parameters",
+        "arguments",
+        "statements"
+    ],
+    "array-type":[ // 建议使用T[]方式声明一个数组对象
+        false,
+        "array"
+    ],
+    "ban": false,
+    "class-name": true, // 类名以大驼峰格式命名
+    "comment-format": [ // 定义注释格式 注释斜杠后加个空格
+        false,
+        "check-space"
+    ],
+    "curly": true, // if/for/do/while强制使用大括号
+    "eofline": false,
+    "forin": true, // 使用for in语句时，强制进行hasOwnProperty检查
+    "indent": [ // 每行开始以空格符开始
+        true
+    ],
+    "interface-name": [false], // interface必须以I开头
+    "jsdoc-format": true, // 注释基于jsdoc风格
+    "label-position": true,
+    "max-line-length": [ // 定义每行代码数
+        false,
+        120
+    ],
+    "member-ordering": [
+        true,
+        "public-before-private",
+        "static-before-instance",
+        "variables-before-functions"
+    ],
+    "no-any": false, // 不允许使用any对象
+    "no-arg": true, // 不允许使用arguments.callee
+    "no-bitwise": true, // 不允许使用特殊运算符 &, &=, |, |=, ^, ^=, <<, <<=, >>, >>=, >>>, >>>=, ~
+    "no-console": [ // 不允许使用console对象
+        true,
+        "log",
+        "error",
+        "debug",
+        "info",
+        "time",
+        "timeEnd",
+        "trace"
+    ],
+    "no-consecutive-blank-lines": false, // 不允许有空行
+    "no-construct": true,
+    "no-debugger": true, // 不允许使用debugger
+    "no-duplicate-variable": true,
+    "no-empty": true, // 函数体不允许空
+    "no-eval": true, // 不允许使用eval
+    "no-shadowed-variable": true,
+    "no-string-literal": true,
+    "no-switch-case-fall-through": true, // 不允许case段落中在没有使用breack的情况下，在新启一段case逻辑
+    "no-trailing-whitespace": false, // 不允许空格结尾
+    "no-unused-expression": true, // 不允许使用未使用的表达式
+    "no-use-before-declare": true, // 在使用前必须声明
+    "no-var-keyword":true, // 不允许使用var
+    "one-line": [
+        true,
+        "check-catch",
+        "check-else",
+        "check-open-brace",
+        "check-whitespace"
+    ],
+    "quotemark": [
+        true,
+        "single"
+    ],
+    "radix": true,
+    "semicolon": [
+        true,
+        "always"
+    ],
+    "switch-default": true,
+    "trailing-comma": [
+        false
+    ],
+    "triple-equals": [ // 必须使用恒等号，进行等于比较
+        true,
+        "allow-null-check"
+    ],
+    "typedef": [
+        true,
+        "parameter",
+        "property-declaration"
+    ],
+    "typedef-whitespace": [
+        true,
+        {
+            "call-signature": "nospace",
+            "index-signature": "nospace",
+            "parameter": "nospace",
+            "property-declaration": "nospace",
+            "variable-declaration": "nospace"
+        }
+    ],
+    "variable-name": [ // 定义变量命名规则
+        true,
+        "ban-keywords",
+        "check-format",
+        "allow-leading-underscore",
+        "allow-pascal-case"
+    ],
+    "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-module",
+        "check-operator",
+        "check-separator",
+        "check-type",
+        "check-typecast"
+    ],
+    "ordered-imports": false, // 引入的包排序
+    "object-literal-sort-keys": false, // 组件排序
+    "object-literal-key-quotes": false, // 对象的键不能用引号
+    "arrow-parens": false
+},
+  "rulesDirectory": []
+}

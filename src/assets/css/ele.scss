@@ -1,0 +1,81 @@
+@charset "utf-8";
+.el-breadcrumb span, .el-breadcrumb a{
+    font-size:18px;
+}
+.el-tabs__header{
+    margin:0 !important;
+}
+.container-main{
+    .el-input__inner{
+        height: 35px;
+        line-height:35px;
+        padding:0 10px;
+    }
+    .tableHeadFixed{
+        position:fixed;
+        top:0;
+        z-index:3;
+    }
+    .el-tabs__item .el-icon-close{
+        padding:2px;
+    }
+}
+.cms-detail-box{
+    min-width:1110px;
+    background:#fff;
+    .el-tabs__nav-scroll{
+        padding:0 30px;
+    }
+    .el-tabs__item{
+        height:60px;
+        line-height:60px;
+    } 
+    .el-tabs__content{
+        padding:0 30px;
+    }
+    .el-dialog{
+        .el-tabs__content{
+            padding:20px 30px;
+        }
+    }
+    .el-input__inner{
+        height: 35px;
+        line-height:35px;
+        padding:0 10px;
+    }
+    .el-form-item__content{
+        margin-bottom: 4px;
+    }
+}
+.cms-sys-box{
+    padding: 0 23px;
+    .el-input__inner,el-textarea__inner{
+        height: 35px;
+        line-height:35px;
+        padding:0 10px;
+    }
+    .el-form-item__content{
+        margin-bottom: 4px;
+    }
+    .el-select-100{
+        width: 100%!important;
+    }
+    .el-textarea{
+        margin-top: 4px;
+    }
+}
+.cms-router-view{
+    .el-table thead th{
+        border-top:1px solid #ebeef5;
+        background:#edf2fe;
+    }
+    .el-form-item__label{
+        font-weight: bold;
+    }
+    .el-table__header-wrapper{
+        min-height:52px;
+    }
+}
+.cms-login-form.is-error{
+    margin-bottom: 28px !important;
+}

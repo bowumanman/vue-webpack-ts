@@ -1,0 +1,73 @@
+/**
+ *  Description: Menu
+ *  Author: zs
+ */
+
+@import "varibles";
+
+.container-logo{
+    height:70px;
+    background:#2d3554;
+    margin-right:1px;
+    text-align: center;
+    border-bottom:1px solid #282e47;
+    img{
+        margin-top:20px;
+    }
+}
+.cms-menu{
+    .el-menu-item,.el-submenu{
+        border-bottom:1px solid #282e47;
+    }
+    .el-submenu .el-menu-item{
+        min-width: auto;
+    }
+    i.fa{
+        font-size:16px;
+        margin-right:5px;
+        color:#d0d4df;
+    }
+    .el-submenu__title>span , .el-menu-item>span{
+        font-size:14px;
+    }
+    .el-menu .el-menu-item{
+        background:#252d4c !important;
+        span{
+            display:inline-block;
+            min-width:102px;
+            padding-left:5px;
+        }
+        .el-icon-plus{
+            color:#fff;
+        }
+        .el-icon-plus:hover{
+            color:#999;
+        }
+    }
+    .el-menu .el-menu-item span:hover{
+        color:#fff;
+    }
+    .el-menu .el-menu-item.is-active{
+        background:#4c84ff !important;
+    }
+    .el-menu-item.is-active{
+        background:#4c84ff !important;
+    }
+    .is-opened .el-submenu__title{
+        background:#252d4c !important;
+    }
+}
+.cms-tab-nemu{
+    .el-tabs{
+        border:0;
+        box-shadow: none;
+    }
+    .el-tabs__item{
+        height:50px;
+        line-height:50px;
+    }
+    .el-tabs__content{
+        display:none;
+    }
+}
+

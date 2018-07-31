@@ -1,0 +1,89 @@
+/**
+ *  Description: Layout
+ *  Creater: yyr
+ */
+ @import "varibles";
+ .custom-btn {
+    padding: 7px 20px;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 50%;
+    span {
+        font-size: inherit;
+    }
+}
+.custom-btn-round {
+    border-radius: 50%;
+    border: 1px solid #bfcbd9;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    color: #f00;
+    background: #fff;
+    font-size: 12px;
+    &:focus,
+    &:hover {
+        border-color: #20a0ff;
+    }
+}
+
+// 表格信息状态字体颜色
+// 待编辑
+.ca-info-color__gray {
+  color: #a6a6a6;
+}
+
+// 取消发布
+.ca-info-color__blue {
+  color: #ff0000;
+}
+
+// 已编辑
+.ca-info-color__orange {
+  color: #ff9948;
+}
+
+// 待完善
+.ca-info-color__light-blue {
+  color: #5b8aff;
+}
+
+// 已发布
+.ca-info-color__purple {
+  color: #b448ff;
+}
+
+// 表格质检状态字体颜色
+// 未质检
+.ca-quality-color__white {
+  color: #bcbcbc;
+}
+
+// 质检通过
+.ca-quality-color__green {
+  color: #04be5b;
+}
+
+// 质检未通过
+.ca-quality-color__red {
+  color: #ff0000;
+}
+
+.el-button--text{
+  color:#5b8cff;
+}
+
+.world-wrap-btn button.el-button {
+  line-height: 1.2;
+  white-space: normal;
+  text-align: left;
+}
+
+// 按钮间距
+// .space {
+//   .el-button+.el-button {
+//     margin-left: 20px!important;
+//   }
+// }
