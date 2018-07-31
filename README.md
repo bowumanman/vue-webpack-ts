@@ -26,8 +26,6 @@ npm test
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Style
-
 ### 命名
 
 * 目录命名采用-分割，例如：user-info
