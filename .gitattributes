@@ -1,1 +1,3 @@
-*.html linguist-language=javascript
+*.ts linguist-language=javascript
+*.vue linguist-language=javascript
+*.scss linguist-language=javascript
